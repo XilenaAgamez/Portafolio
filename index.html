@@ -1,288 +1,230 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio profesional de Xilena Agamez - Desarrollo Backend, APIs y QA"/>
+  <title>Portafolio | Xilena Agamez</title>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://unpkg.com/sweet-scroll/sweet-scroll.min.js"></script>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <!-- CSS & JS -->
-    <link rel="stylesheet" href="style.css"/>
-    <script src="./index.js" defer></script>
-
-    <!-- Meta Tags -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="100% FREE Professional Portfolio Templates - Plain Template"/>
-
-    <meta name="description" content="Portafolio profesional de Xilena Agamez - Desarrollo Backend, APIs y QA"/>
-
-    <title>Mi Portafolio - Xilena Agamez</title>
-
-
-    <!-- Icons -->
-    <link rel="icon" href="./favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon-180x180.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="./assets/icons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="./assets/icons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="./assets/icons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="./assets/icons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./assets/icons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./assets/icons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="./assets/icons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="./assets/icons/apple-touch-icon-57x57.png">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif']
+          },
+          colors: {
+            primary: '#4f46e5',
+            dark: '#1f2937',
+            light: '#f3f4f6'
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body>
-    <main>
-        <!-- Hero Header -->
-        <header id="heroHeader" class="hero-header">
-            <nav id="navBar" class="nav">
-                <div class="container">
-                    <button type="button" id="hamburgerBtn" class="nav__hamburger-btn">
-                        <span class="nav__hamburger-top"></span>
-                        <span class="nav__hamburger-center"></span>
-                        <span class="nav__hamburger-bottom"></span>
-                    </button>
-                    <ul id="navList" class="nav__list">
-                        <li class="nav__list-item">
-                            <a class="nav__list-link active" href="#heroHeader">&lt;Home &sol;&gt;</a>
-                        </li>
-                        <li class="nav__list-item">
-                            <a class="nav__list-link" href="#services">&lt;Experience &sol;&gt;</a>
-                        </li>
-                        <li class="nav__list-item">
-                            <a class="nav__list-link" href="#works">&lt;Works &sol;&gt;</a>
-                        </li>
-                        <li class="nav__list-item">
-                            <a class="nav__list-link" href="#contact">&lt;Contact &sol;&gt;</a>
-                        </li>
-                    </ul>
+<body class="bg-light text-dark font-sans">
+  <!-- Header -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-primary">Xilena Agamez</h1>
+      <nav class="space-x-4 hidden md:block">
+        <a href="#about" class="hover:text-primary font-medium">Sobre mí</a>
+        <a href="#services" class="hover:text-primary font-medium">Servicios</a>
+        <a href="#projects" class="hover:text-primary font-medium">Proyectos</a>
+        <a href="#contact" class="hover:text-primary font-medium">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="max-w-6xl mx-auto px-6">
+  <!-- Hero -->
+    <section class="bg-primary text-white text-center py-16 px-6" id="about">
+        <div class="max-w-3xl mx-auto">
+        <img src="https://media.licdn.com/dms/image/v2/D4E03AQEnZPuZS2Ffow/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1673815742268?e=1746662400&v=beta&t=b2rplmCNhJOLRSM9NORSq_RcpA3R7FoZC8aZ_Nj6uL4" alt="Xilena Agamez" class="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-white shadow-lg">
+        <h2 class="text-3xl font-bold mb-2">Hola, soy Xilena Agamez</h2>
+        
+        <!-- Aquí agregamos el span para aplicar el efecto de escritura -->
+        <p class="text-lg leading-relaxed">
+            <span id="typewriter-text"></span>
+        </p>
+        </div>
+    </section>
+    
+
+    <!-- Servicios -->
+    <section class="py-16 px-6 bg-white" id="services">
+        <div class="rounded-2xl p-4 shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-300 bg-white">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-2xl font-bold mb-8 text-center">Servicios</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-light p-6 rounded-xl shadow">
+                    <h3 class="font-semibold text-xl mb-2">APIs y Backend</h3>
+                    <p>Diseño y desarrollo de APIs escalables, seguras y eficientes.</p>
                 </div>
-            </nav>
-            
-            <section class=" container">
-                <div class="">
-                    <!-- Imagen circular -->
-                    <img src="https://media.licdn.com/dms/image/v2/D4E03AQEnZPuZS2Ffow/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1673815742268?e=1746662400&v=beta&t=b2rplmCNhJOLRSM9NORSq_RcpA3R7FoZC8aZ_Nj6uL4" alt="My Photo" class="header__photo"/>
+                <div class="bg-light p-6 rounded-xl shadow">
+                    <h3 class="font-semibold text-xl mb-2">Proyectos Empresariales</h3>
+                    <p>Analisis y Desarrollo de software bajo el marco de trabajo Scrum,  .</p>
                 </div>
-                <div class="header__left">
-                    <span class="header__sup-text">Hello There! I am a</span>
-                    <h1 class="header__title">
-                        <span class="header__title-1" data-role="analyst">analyst  and</span>
-                        <span class="header__title-2" data-role="DEVELOPER">Developer</span>
-                    </h1>
-                    <p class="header__msg">I am a Software Development Analyst with 4 years of experience, specializing in requirements gathering and analysis. I lead projects from start to finish, using agile methodologies such as Scrum. Additionally, I am responsible for project management and collaborating with multidisciplinary teams. My experience includes the creation and execution of software test cases. I am motivated by continuous learning and delivering high-quality solutions that meet user needs.
-                    </p>
-                    
-                </div><br>
+                <div class="bg-light p-6 rounded-xl shadow">
+                    <h3 class="font-semibold text-xl mb-2">Proyectos Personales</h3>
+                    <p>Desarrollo de herramientas y sistemas propios algunas de ellas disponibles en <a href="https://github.com/XilenaAgamez" class="text-primary underline" target="_blank">mi GitHub</a>.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </section>
 
-            </section>
-            <span class="header__bg"></span>
-        </header><br>
+    <!-- Proyectos -->
+    <section class="py-16 px-6 bg-gray-50" id="projects">
+        
+        <div class="max-w-6xl mx-auto">
+        <h2 class="text-2xl font-bold mb-8 text-center">Proyectos</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <!-- Proyecto ejemplo -->
+            <div class="card-glow relative overflow-hidden bg-white rounded-xl shadow p-6 transition-all duration-300 hover:shadow-xl hover:scale-[1.02]">
+                <h3 class="font-semibold text-lg mb-2">Compras y control de recursos - Organización INCA</h3>
+                <p class="text-sm">Desarrollo de un sistema para la gestión eficiente de compras, inventario y control de recursos dentro de la organización.</p>
+                <div class="mt-2 space-x-2 text-sm">
+                    <span class="bg-primary text-white px-2 py-1 rounded">Analisis</span>
+                    <span class="bg-primary text-white px-2 py-1 rounded">Desarrollo de Software</span>
+                    <span class="bg-primary text-white px-2 py-1 rounded">Liderazgo</span>
+                </div>
+            </div>
+              <!-- Proyecto ejemplo -->
+              <div class="card-glow relative overflow-hidden bg-white rounded-xl shadow p-6 transition-all duration-300 hover:shadow-xl hover:scale-[1.02]">
+                <h3 class="font-semibold text-lg mb-2">Equiteam - NativApps</h3>
+                <p class="text-sm">Sistema completo para selección, contratación, nómina y desarrollo de personal.</p>
+                <div class="mt-2 space-x-2 text-sm">
+                    <span class="bg-primary text-white px-2 py-1 rounded">Analisis</span>
+                    <span class="bg-primary text-white px-2 py-1 rounded">Autonomia</span>
+                    <span class="bg-primary text-white px-2 py-1 rounded">Trabajo en equipo</span>
+                </div>
+            </div>
+              <!-- Proyecto ejemplo -->
+              <div class="card-glow relative overflow-hidden bg-white rounded-xl shadow p-6 transition-all duration-300 hover:shadow-xl hover:scale-[1.02]">
+                <h3 class="font-semibold text-lg mb-2">Talento Humano - Organización INCA</h3>
+                <p class="text-sm">Sistema completo para selección, contratación, nómina y desarrollo de personal.</p>
+                <div class="mt-2 space-x-2 text-sm">
+                    <span class="bg-primary text-white px-2 py-1 rounded">Liderazgo</span>
+                    <span class="bg-primary text-white px-2 py-1 rounded">SCRUM</span>
+                    <span class="bg-primary text-white px-2 py-1 rounded">Comunicación</span>
+                    <span class="bg-primary text-white px-2 py-1 rounded">Autonomía</span>
+                </div>
+            </div>
 
-        <!-- Services -->
-        <section id="services" class="section container">
-            <h2 class="section__title">Services</h2>
-
-            <div class="service-cards">
-                <article class="service-card__box">
-                    <span class="service-card__illustration">
-                        <img src="./assets/services/support.svg" alt="API Illustration"/>
-                    </span>
-                    <h3 class="service-card__title">APIs y Backend</h3>
-                    <p class="service-card__msg">Diseño y desarrollo de APIs escalables, seguras y optimizadas para alto rendimiento.</p>
-                    <span class="service-card__bg"></span>
-                </article>
-                <article class="service-card__box">
-                    <span class="service-card__illustration">
-                        <img src="./assets/services/design.svg" alt="Projects Illustration"/>
-                    </span>
-                    <h3 class="service-card__title">Business Projects</h3>
-                    <p class="service-card__msg">Experiencia en desarrollo y QA en proyectos de diversas industrias, garantizando calidad y eficiencia. Implementación de casos de prueba, análisis y documentación de historias de usuario con herramientas como JIRA y TestRail.</p>
-                    <span class="service-card__bg"></span>
-                </article>
-                <article class="service-card__box">
-                    <span class="service-card__illustration">
-                        <img src="./assets/services/developing.svg" alt="Personal Projects Illustration"/>
-                    </span>
-                    <h3 class="service-card__title">Personal Projects</h3>
-                    <p class="service-card__msg">Creación de soluciones innovadoras y APIs propias, algunas de ellas disponibles en mi portafolio y GitHub.
-                        <a href="https://github.com/XilenaAgamez" target="_blank">https://github.com/XilenaAgamez</a>
-                    </p>
-                    <span class="service-card__bg"></span>
-                </article>
+            <!-- Proyecto ejemplo -->
+            <div class="card-glow relative overflow-hidden bg-white rounded-xl shadow p-6 transition-all duration-300 hover:shadow-xl hover:scale-[1.02]">
+                <h3 class="font-semibold text-lg mb-2">Xporty - Proyecto interno</h3>
+                <p class="text-sm">Sistema completo para la gestion de informació en escuela de futbol.</p>
+                <div class="mt-2 space-x-2 text-sm">
+                    <span class="bg-primary text-white px-2 py-1 rounded">Liderazgo</span>
+                    <span class="bg-primary text-white px-2 py-1 rounded">SCRUM</span>
+                    <span class="bg-primary text-white px-2 py-1 rounded">Comunicación</span>
+                    <span class="bg-primary text-white px-2 py-1 rounded">Autonomía</span>
+                </div>
             </div>
             
-        </section>
+            <!-- Puedes seguir con más proyectos -->
+        </div>
+        </div>
+    </section>
 
-        <!-- Sample Works -->
-        <section id="works" class="section container">
-            <h2 class="section__title">My Works</h2>
-            <div class="works">
-                <article class="work">
-                    <div class="work__box">
-                        <span class="work__img-box">
-                            <img style="width: 20px;filter: invert(1);" src="./assets/skills.png" alt="Construyamos"/>
-                        </span>
-                        <h3 class="work__title">Construyamos - NativApps</h3>
-                        <span class="work__badges">
-                            <span class="work__badge">JIRA</span>
-                            <span class="work__badge">Excel</span>
-                            <span class="work__badge">Scrum</span>
-                        </span>
-                    </div>
-                </article>
-                <article class="work">
-                    <div class="work__box">
-                        <span class="work__img-box">
-                            <img style="width: 20px;filter: invert(1);" src="./assets/skills.png" alt="Equiteam"/>
-                        </span>
-                        <h3 class="work__title">Equiteam - NativApps</h3>
-                        <span class="work__badges">
-                            <span class="work__badge">JIRA</span>
-                            <span class="work__badge">Scrum</span>
-                        </span>
-                    </div>
-                </article>
-                <article class="work">
-                    <div class="work__box">
-                        <span class="work__img-box">
-                            <img style="width: 20px;filter: invert(1);" src="./assets/skills.png" alt="Logis"/>
-                        </span>
-                        <h3 class="work__title">Logis - NativApps</h3>
-                        <span class="work__badges">
-                            <span class="work__badge">QA</span>
-                            <span class="work__badge">Historias de Usuario</span>
-                        </span>
-                    </div>
-                </article>
-                <article class="work">
-                    <div class="work__box">
-                        <span class="work__img-box">
-                            <img style="width: 20px;filter: invert(1);" src="./assets/skills.png" alt="Talento Humano"/>
-                        </span>
-                        <h3 class="work__title">Talento Humano - Organización INCA</h3>
-                        <span class="work__badges">
-                            <span class="work__badge">Liderazgo</span>
-                            <span class="work__badge">Desarrollo de Software</span>
-                        </span>
-                    </div>
-                </article>
-                <article class="work">
-                    <div class="work__box">
-                        <span class="work__img-box">
-                            <img style="width: 20px;filter: invert(1);" src="./assets/skills.png" alt="Escenarios de Aprendizaje y Prácticas Educativas"/>
-                        </span>
-                        <h3 class="work__title">Escenarios de Aprendizaje y Prácticas Educativas - Organización INCA</h3>
-                        <span class="work__badges">
-                            <span class="work__badge">Liderazgo</span>
-                            <span class="work__badge">PHP </span>
-                            <span class="work__badge">MySQL</span>
-                            <span class="work__badge">LARAVEL</span>
-                        </span>
-                    </div>
-                </article>
-                <article class="work">
-                    <div class="work__box">
-                        <span class="work__img-box">
-                            <img style="width: 20px;filter: invert(1);" src="./assets/skills.png" alt="Proyectos Personales"/>
-                        </span>
-                        <h3 class="work__title">Proyectos Personales</h3>
-                        <span class="work__badges">
-                            <span class="work__badge">PHP MVC</span>
-                            <span class="work__badge">Node.js</span>
-                            <span class="work__badge">APIs</span>
-                            <span class="work__badge">Angular (en proceso de aprendizaje)</span>
-                        </span>
-                    </div>
-                </article>
-            </div>
-            
-            
-        </section>
-        <!-- Contact -->
-        <section id="contact" class="section container">
-            <h2 class="section__title">Let's Connect!</h2>
-            <div class="contact">
-                <ul>
-                    <li><strong>Github:</strong> <a href="https://github.com/XilenaAgamez?tab=repositories" target="_blank">https://github.com/XilenaAgamez</a></li>
-                    <li><strong>Email:</strong> <a href="mailto:xileagamez0728@gmail.com">xileagamez0728@gmail.com</a></li>
-                    <li><strong>Linkedin:</strong> <a href="https://www.linkedin.com/in/xilena-agamez-829650244/" target="_blank">https://www.linkedin.com/in/xilena-agamez-829650244/</a></li>
-                    <li><strong>Telefono:</strong> <a href="https://wa.me/+573015210583" target="_blank">https://wa.me/+573015210583</a></li>
-                </ul>
-            </div>
-            
-        </section>
+    <!-- Contacto -->
+    <section class="py-16 px-6 bg-white" id="contact">
+        <div class="max-w-xl mx-auto text-center">
+        <h2 class="text-2xl font-bold mb-6">Contáctame</h2>
+        <ul class="space-y-3">
+            <li><strong>Email:</strong> <a  href="mailto:xileagamez0728@gmail.com" class="text-primary underline">xileagamez0728@gmail.com</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/XilenaAgamez" target="_blank" class="text-primary underline">https://github.com/XilenaAgamez</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/xilena-agamez-829650244/" target="_blank" class="text-primary underline">https://www.linkedin.com/in/xilena-agamez-829650244/</a></li>
+            <li><strong>WhatsApp:</strong> <a href=" https://wa.me/+573015210583" target="_blank" class="text-primary underline">https://wa.me/+573015210583</a></li>
+        </ul>
+        </div>
+    </section>
 
-        <!-- Footer -->
-        <!--footer class="footer">
-            Template made with ❤️ by <a href="https://github.com/Finestwork" target="_blank" class="footer__link">Kapitan Heneral</a>
-        </!--foote-->
-    </main>
+    </div>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-6">
+    <p>&copy; 2025 Xilena Agamez. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
 
-<script>
-    document.getElementById('toggleLanguage').addEventListener('click', function() {
-        const currentLang = document.documentElement.lang || 'es';
-        const newLang = currentLang === 'es' ? 'en' : 'es';
-        document.documentElement.lang = newLang;
-        
-        document.querySelectorAll('.work__title').forEach(el => {
-            el.textContent = el.getAttribute(`data-${newLang}`);
-        });
-    });
-</script>
 
-<style>/* Estilo principal */
-    .contact {
-        background-color: #111111; /* Fondo negro */
-        color: #fff; /* Texto blanco */
-        border-radius: 10px;
-        padding: 30px;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-        max-width: 600px;
-        margin: 20px auto;
-        font-family: 'Arial', sans-serif;
+<style>
+    .card-glow::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top left, rgba(0, 123, 255, 0.2), transparent);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
     }
-    
-    .contact h2 {
-        text-align: center;
-        font-size: 26px;
-        color: #fff;
-        margin-bottom: 20px;
-        font-weight: 600;
+    .card-glow:hover::before {
+      opacity: 1;
     }
-    
-    .contact ul {
-        list-style-type: none;
-        padding: 0;
+
+    /* Estilo para la parte del texto */
+    .text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
     }
-    
-    .contact li {
-        font-size: 16px;
-        margin-bottom: 15px;
-        line-height: 1.6;
+
+    /* Estilo para el texto de tipo código */
+    #typewriter-text {
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    white-space: pre-wrap; /* Permite que el texto respete los saltos de línea */
+    overflow-wrap: break-word; /* Asegura que el texto largo se ajuste en el contenedor */
+    border-right: 2px solid white; /* Efecto de cursor parpadeante */
+    display: inline-block;
+    padding-right: 5px; /* Espacio extra para el cursor */
     }
-    
-    .contact li strong {
-        font-weight: 700;
-        color: #aaa; /* Títulos más claros para darle un contraste sutil */
-    }
-    
-    .contact a {
-        color: #1e90ff; /* Enlaces azules */
-        text-decoration: none;
-        transition: color 0.3s ease, text-decoration 0.3s ease;
-        font-weight: 500;
-    }
-    
-    .contact a:hover {
-        color: #0a74da; /* Azul más oscuro cuando se pasa el cursor */
-        text-decoration: underline;
-    }
+
     </style>
+    
+
+  <script>
+  // Texto que quieres que se "escriba", con saltos de línea
+    const text = `Analista de Desarrollo con experiencia en Backend, QA y liderazgo de proyectos.
+    Me enfoco en entregar soluciones de alta calidad y trabajar con equipos multidisciplinarios.`;
+
+    // Elemento donde se mostrará el texto
+    const typewriterElement = document.getElementById('typewriter-text');
+
+    // Variable para controlar el índice del texto
+    let index = 0;
+
+    // Función para simular el efecto de escritura, respetando saltos de línea
+    function typeWriter() {
+    // Si el índice es menor que el largo del texto, seguimos escribiendo
+    if (index < text.length) {
+        // Verificamos si es un salto de línea y lo transformamos en un <br> para crear una nueva línea
+        if (text.charAt(index) === "\n") {
+        typewriterElement.innerHTML += "<br>";
+        } else {
+        // Agregar el siguiente carácter al texto
+        typewriterElement.innerHTML += text.charAt(index);
+        }
+        index++;
+        // Llamamos de nuevo a la función después de un retraso (50ms)
+        setTimeout(typeWriter, 50);
+    }
+    }
+
+    // Iniciar el efecto cuando la página haya cargado
+    window.onload = function() {
+        typeWriter();
+    };
+
+
+  </script>    
