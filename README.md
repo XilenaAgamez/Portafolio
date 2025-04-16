@@ -1,5 +1,4 @@
- Sobre mí
-Soy desarrolladora con experiencia en el diseño y desarrollo de aplicaciones web enfocadas en funcionalidad, rendimiento y experiencia de usuario. Me especializo en construir soluciones a medida que respondan a necesidades reales, desde sistemas administrativos hasta plataformas educativas y de gestión.
+Soy desarrolladora con experiencia en analisis y desarrollo de aplicaciones web enfocadas en funcionalidad, rendimiento y experiencia de usuario. Me especializo en construir soluciones a medida que respondan a necesidades reales, desde sistemas administrativos hasta plataformas educativas y de gestión.
 
 🛠️ Tecnologías que manejo
 Frontend: HTML, CSS, JavaScript, Bootstrap
